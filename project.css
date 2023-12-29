@@ -4,6 +4,27 @@
     padding: 0;
 }
 
+/*for scroll bar*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: #c76203;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  } 
+
+
 body {
     font-family: 'Caveat', cursive;
     font-family: 'Libre Baskerville', serif;
@@ -15,7 +36,6 @@ body {
 
 .main {
     width: 100%;
-    max-width: auto;
     margin: 0 auto;
 }
 
@@ -49,6 +69,7 @@ li, .Nav-item a, .Nav-button {
     font-size: medium;
     font-weight: 500;
     background-color: #FB8B24;
+    box-shadow:  30px 30px 60px #bc681b,-30px -30px 60px #ffae2d;
 }
 
 .Nav-item > a:hover{
@@ -91,9 +112,11 @@ button:hover,
     display: flex;
     flex-direction: column;
     gap: 100px;
-    padding: 100px 10px;
+    padding: 150px 10px;
 }
-.display {
+
+/*for background on first display*/
+.display { 
 	background: rgb(251,139,36);
     background: linear-gradient(90deg, rgba(251,139,36,1) 0%, rgba(237,43,77,1) 50%, rgba(180,112,17,1) 100%);
     background-size: 400% 400%;
@@ -112,12 +135,33 @@ button:hover,
 		background-position: 0% 50%;
 	}
 }
+/*display 2 content */
+.display-2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(227, 110, 1);
+    clip-path:ellipse(55% 85% at 50% 8%);
+    display: grid;
+    place-content: center;  
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+    text-align: justify;
+}
+
+.display-2 p{
+    grid-column-start: 2;
+    grid-column-end: 16 ;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    font-size: 36px;
+    color: antiquewhite;
+}
 
 
 
 @media (max-width: 768px) {
    
-    
+    /*for mobile site remove contact and only img and grid*/
     .Nav-logo img{
         height: 65px;
     }  
@@ -126,7 +170,17 @@ button:hover,
         display: none;
     }
 
-    
-    
+    .display-2{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(227, 110, 1);
+        clip-path:ellipse(80% 75% at 50% 8%);
+    }
+    .display-2 p{
+        font-size: 30px;
+        border-radius: 35%;
+        
+    }
+
 }
 
