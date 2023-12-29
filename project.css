@@ -215,8 +215,7 @@ button:hover,
         height: 100vh;
         background-color: rgb(227, 110, 1);
         clip-path:ellipse(100% 75% at 50% 8%);
-        box-shadow: inset -30px -30px 60px #bf5c00,
-            inset 30px 30px 60px #ff9a00;
+
         
         }
 }
