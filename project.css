@@ -115,6 +115,13 @@ button:hover,
     padding: 150px 35px;
 }
 
+.display h1{
+    font-size: 4.5rem;
+}
+.display h2{
+    font-size: 3rem;
+}
+
 /*for background on first display*/
 .display { 
 	background: rgb(251,139,36);
@@ -146,6 +153,9 @@ button:hover,
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(16,1fr);
     text-align: justify;
+    background: #ff7b00;
+    box-shadow:  -30px -30px 60px #bf5c00,
+             30px 30px 60px #ff9a00;
 }
 
 .display-2 p{
@@ -170,17 +180,30 @@ button:hover,
         display: none;
     }
 
+    .display{
+        padding: 100px 35px;
+    }
+
+    .display h1{
+        font-size: 3.1rem;
+    }
+
     .display-2{
         width: 100%;
         height: 100vh;
         background-color: rgb(227, 110, 1);
         clip-path:ellipse(80% 75% at 50% 8%);
+        background: #ff7b00;
+        box-shadow: inset -30px -30px 60px #bf5c00,
+            inset 30px 30px 60px #ff9a00;
     }
     .display-2 p{
-        font-size: 30px;
-        border-radius: 35%;
         
-    }
+        font-size: 26px;
+        border-radius: 35%;
+        text-align: center;
+        grid-row-start: 2;
+        }
 
 }
 
