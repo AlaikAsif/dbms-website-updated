@@ -67,7 +67,7 @@ li, .Nav-item a, .Nav-button {
     font-size: medium;
     font-weight: 500;
     background-color: #FB8B24;
-    box-shadow:  30px 30px 60px #bc681b,-30px -30px 60px #ffae2d;
+ 
 }
 
 .Nav-item > a:hover{
@@ -165,12 +165,7 @@ button:hover,
 }
 
 
-@media (min-width: 769px){
-    .display-2{
-        box-shadow:  -30px -30px 60px #bf5c00,
-        30px 30px 60px #ff9a00;
-    }
-}
+
 @media (max-width: 768px) {
    
     /*for mobile site remove contact and only img and grid*/
