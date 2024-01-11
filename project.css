@@ -4,7 +4,8 @@
     display: none;
     justify-content: center;
     position: fixed;
-    height: 100vh; 
+    top: -100px;
+    height: 150vh; 
     width: 100vw;
     backdrop-filter: blur(10px);
     z-index: 199;
@@ -12,7 +13,7 @@
 }
 
 .login-popup{
-    margin-top: 30vh;
+    margin-top: 45vh;
     position: fixed;
     z-index: 200;
     height: 25%;
@@ -69,8 +70,11 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    /* position: fixed;
+    width: 100%; */
     padding: 2px 20px 10px;
     background-color: #FB8B24;
+    z-index: 250;
 }
 
 .Nav-bar{
